@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Music Recommendation</title>
+  <link rel="stylesheet" href="S-style.css">
+</head>
+<body>
+  <!-- 🎵 Header -->
+  <header>
+    <h1>BeatVibe: AI-Powered Music Recommender</h1>
+    <p class="tagline">"Type your vibe. Get the right rhythm."</p>
+  </header>
+  <!-- 🎧 Main Form -->
+  <main>
+    <h2>What Are You Feeling? 🎶</h2>
+    <form action="S-recommend.php" method="post">
+      <label for="interest">Enter mood / genre / artist:</label>
+      <input type="text" name="interest" id="interest" required>
+      <input type="submit" value="Recommend Me Music">
+    </form>
+    <div class="genre-tags">
+      <p><strong>Try These:</strong></p>
+      <button onclick="setInterest('lofi')">Lofi</button>
+      <button onclick="setInterest('Arijit Singh')">Arijit Singh</button>
+      <button onclick="setInterest('happy')">Happy</button>
+      <button onclick="setInterest('rock')">Rock</button>
+    </div>
+  </main>
+  <script>
+    function setInterest(value) {
+      document.getElementById('interest').value = value;
+    }
+  </script>
+  <!-- 🔚 Footer -->
+  <footer>
+    Created by Chetan Bhardwaj | Music Vibes AI 2025<br>
+    <em>"Let your mood decide the music, not the playlist."</em>
+  </footer>
+</body>
+</html>

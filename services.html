@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - RecommendationHub</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+    }
+
+    .services-section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 2rem;
+    }
+
+    .services-section h2 {
+      text-align: center;
+      color: #00ffe7;
+      margin-bottom: 2rem;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(0, 255, 231, 0.4);
+    }
+
+    .service-card h3 {
+      color: #00ffe7;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .services-section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🌐 Navbar -->
+  <nav class="navbar">
+    <div class="logo">RecommendationHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- 📊 Services Section -->
+  <section class="services-section">
+    <h2>Our Smart Recommendation Services</h2>
+    <div class="service-grid">
+
+      <div class="service-card">
+        <buttonstyle="all: unset; cursor: pointer; color: #00ffe7;" onclick="location.href='B-index.html'">
+        <h3>📚 Book Recommendation</h3>
+        <p>Get personalized book suggestions based on your interests, genre, and mood.</p>
+      </div>
+
+      <div class="service-card">
+        <buttonstyle="all: unset; cursor: pointer; color: #00ffe7;" onclick="location.href='M-index.html'">
+        <h3>🎬 Movie Recommendation</h3>
+        <p>Discover movies tailored to your vibe using smart keyword matching.</p>
+      </div>
+
+      <div class="service-card">
+        <buttonstyle="all: unset; cursor: pointer; color: #00ffe7;" onclick="location.href='S-index.html'">
+        <h3>🎵 Music Recommendation</h3>
+        <p>Let your mood pick the beat — get music suggestions by mood, genre, or artist.</p>
+      </div>
+
+      <div class="service-card">
+        <buttonstyle="all: unset; cursor: pointer; color: #00ffe7;" onclick="location.href='C-index.html'">
+        <h3>💼 Career Recommendation</h3>
+        <p>AI-based career guidance based on skills, interest, and personal preferences.</p>
+      </div>
+
+    </div>
+  </section>
+ <!-- 🔚 Footer -->
+<footer class="footer glow-footer">
+  <div class="footer-container">
+    <!-- 🧠 Brand Info -->
+    <div class="footer-left">
+      <h3>RecommendationHub</h3>
+      <p>AI-Powered Recommendations for Books, Movies, Music & Careers</p>
+    </div>
+    <!-- 🔗 Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+        <li><a href="services.html">🛠️ Services</a></li>
+        <li><a href="contact.html">📬 Contact</a></li>
+      </ul>
+    </div>
+    <!-- 📬 Contact + Social -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:chetanbhardwaj646@gmail.com">chetanbhardwaj646@gmail.com</a></p>
+      <p>Made with ❤️ by Chetan Bhardwaj</p>
+      <div class="social-icons">
+        <a href="https://discordapp.com/users/fatal_icarus" target="_blank" title="Discord">💬</a>
+        <a href="https://www.linkedin.com/in/chetan-bhardwaj-8095241b2" target="_blank" title="LinkedIn">💼</a>
+        <a href="https://www.instagram.com/chetxn_4" target="_blank" title="Instagram">📸</a>
+      </div>
+    </div>
+  </div>
+  <!-- 🔒 Bottom Line -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 RecommendationHub. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

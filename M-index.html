@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Recommendation</title>
+  <link rel="stylesheet" href="M-style.css">
+</head>
+<body>
+
+  <!-- 🎬 Header -->
+  <header>
+    <h1>CineMind: AI-Powered Movie Recommender</h1>
+    <p class="tagline">"Tell us your vibe. We'll pick the perfect movie!"</p>
+  </header>
+
+  <!-- 🔍 Main Form -->
+  <main>
+    <h2>Get a Movie That Matches Your Mood 🍿</h2>
+    <form action="M-recommend.php" method="post">
+      <label for="interest">Enter a genre / actor / mood:</label>
+      <input type="text" name="interest" id="interest" required>
+      <input type="submit" value="Recommend">
+    </form>
+
+    <div class="genre-tags">
+      <p><strong>Try These:</strong></p>
+      <button onclick="setInterest('Action')">Action</button>
+      <button onclick="setInterest('Comedy')">Comedy</button>
+      <button onclick="setInterest('Romance')">Romance</button>
+      <button onclick="setInterest('Thriller')">Thriller</button>
+    </div>
+  </main>
+
+  <script>
+    function setInterest(value) {
+      document.getElementById('interest').value = value;
+    }
+  </script>
+
+  <!-- 🔚 Footer -->
+  <footer>
+    Made with 🎬 by Chetan Bhardwaj | Movie Recommendation AI – 2025<br>
+    <em>"Because one good movie can change your mood!"</em>
+  </footer>
+
+</body>
+</html>

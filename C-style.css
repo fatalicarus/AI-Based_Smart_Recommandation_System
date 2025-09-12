@@ -1,0 +1,157 @@
+/* 🌌 Futuristic Background Image Setup */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("C-BG.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🧠 Header - neon vibe */
+header {
+  height: 150px;
+  background-color: rgba(5, 5, 5, 0.85);
+  color: #00ffe7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 2px solid #00ffe7;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #89f3ff;
+  margin-top: 5px;
+}
+
+/* 📦 Glassmorphic Main Box */
+main {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
+  color: #fff;
+  flex-grow: 1;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* 🧾 Headings */
+main h2 {
+  text-align: center;
+  color: #00ffe7;
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.6);
+}
+
+/* 🔍 Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 350px;
+  border: 1px solid #00ffe7;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+}
+
+input[type="submit"] {
+  padding: 10px 22px;
+  background-color: #00ffe7;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #00b3a7;
+  color: #fff;
+}
+
+/* 🏷️ Popular Tags */
+.genre-tags {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.genre-tags p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #89f3ff;
+}
+
+.genre-tags button {
+  margin: 6px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #00ffe7;
+  border: 1px solid #00ffe7;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.genre-tags button:hover {
+  background-color: #00ffe7;
+  color: #000;
+}
+
+/* 🔚 Futuristic Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px;
+  text-align: center;
+  color: #89f3ff;
+  font-size: 14px;
+  border-top: 1px solid #00ffe7;
+  margin-top: auto;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  main {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}

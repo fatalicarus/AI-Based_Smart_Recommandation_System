@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Career Recommendation</title>
+  <link rel="stylesheet" href="C-style.css">
+</head>
+<body>
+
+  <!-- 🧠 Header -->
+  <header>
+    <h1>CareerPath: AI-Powered Career Guide</h1>
+    <p class="tagline">"You describe yourself. We'll guide your path."</p>
+  </header>
+
+  <!-- 📥 Main Form -->
+  <main>
+    <h2>Find the Best Career for You 🔍</h2>
+    <form action="C-recommend.php" method="post">
+      <label for="interest">Enter your interest / stream / skill:</label>
+      <input type="text" name="interest" id="interest" required>
+      <input type="submit" value="Get Recommendation">
+    </form>
+
+    <div class="genre-tags">
+      <p><strong>Popular Keywords:</strong></p>
+      <button onclick="setInterest('technology')">Technology</button>
+      <button onclick="setInterest('design')">Design</button>
+      <button onclick="setInterest('commerce')">Commerce</button>
+      <button onclick="setInterest('science')">Science</button>
+    </div>
+  </main>
+  <script>
+    function setInterest(value) {
+      document.getElementById('interest').value = value;
+    }
+  </script>
+  <!-- 📍 Footer -->
+  <footer>
+    Created by Chetan Bhardwaj | Career AI Recommender | 2025<br>
+    <em>"Choose a path that fits you, not just a paycheck."</em>
+  </footer>
+</body>
+</html>

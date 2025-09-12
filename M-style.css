@@ -1,0 +1,150 @@
+/* 🎬 Movie Theater Background */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("M-BG.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+/* 🧠 Header */
+header {
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFD700;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 2px solid #FFD700;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #ffe;
+  margin-top: 5px;
+}
+
+/* 🎬 Main Box */
+main {
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* 🧾 Headings */
+main h2 {
+  text-align: center;
+  color: #FFD700;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+/* 🔍 Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #eee;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 350px;
+  border: 1px solid #FFD700;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
+}
+
+input[type="submit"] {
+  padding: 10px 22px;
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #d9b600;
+  color: #fff;
+}
+
+/* 🍿 Popular Tags */
+.genre-tags {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.genre-tags p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.genre-tags button {
+  margin: 6px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.genre-tags button:hover {
+  background-color: #FFD700;
+  color: #000;
+}
+
+/* 🎬 Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  text-align: center;
+  color: #ccc;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  margin-top: auto;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  main {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  input[type="text"], input[type="submit"] {
+    width: 100%;
+  }
+}

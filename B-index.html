@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Recommendation</title>
+  <link rel="stylesheet" href="B-style.css">
+</head>
+<body>
+  <!-- 🔝 Header -->
+  <header>
+    <h1>SmartBook: AI-Powered Book Recommender</h1>
+    <p class="tagline">"You type the vibe. We find your next favorite read!"</p>
+  </header>
+  <!-- 🔍 Form -->
+  <h2 style="margin-top: 30px;">Find Your Next Book </h2>
+  <form action="B-recommend.php" method="post">
+    <label for="interest">Enter your interest/genre:</label>
+    <input type="text" name="interest" id="interest" required>
+    <input type="submit" value="Get Recommendation">
+  </form>
+  <!-- 🌟 Popular Tags -->
+  <div class="genre-tags">
+    <p><strong>Popular Interests:</strong></p>
+    <button onclick="setInterest('Self Help')">Self Help</button>
+    <button onclick="setInterest('Fiction')">Fiction</button>
+    <button onclick="setInterest('Finance')">Finance</button>
+    <button onclick="setInterest('Motivation')">Motivation</button>
+  </div>
+  <script>
+    function setInterest(value) {
+      document.getElementById('interest').value = value;
+    }
+  </script>
+  <!-- 🔚 Footer -->
+  <footer>
+    Made with by Chetan Bhardwaj<br>
+    <em>"Reading is not just a habit, it's a superpower."</em>
+  </footer>
+</body>
+</html>

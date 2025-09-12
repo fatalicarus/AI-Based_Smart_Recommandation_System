@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Chetan Bhardwaj</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.1);
+    }
+
+    .about-container h2 {
+      text-align: center;
+      color: #00ffe7;
+      margin-bottom: 1rem;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .about-photo {
+      flex: 1;
+      max-width: 250px;
+    }
+
+    .about-photo img {
+      width: 100%;
+      border-radius: 50%;
+      border: 3px solid #00ffe7;
+    }
+
+    .about-text {
+      flex: 2;
+    }
+
+    .about-text h3 {
+      margin: 0.5rem 0;
+      color: #00ffe7;
+    }
+
+    .skills {
+      margin-top: 1.5rem;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills li::before {
+      content: "✅ ";
+      color: #00ffe7;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌐 Navbar -->
+  <nav class="navbar">
+    <div class="logo">RecommendationHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🙋 About Section -->
+  <div class="about-container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-photo">
+        <!-- Optional Photo -->
+        <img src="mine.jpg" alt="Chetan Bhardwaj">
+      </div>
+      <div class="about-text">
+        <h3>Hi, I'm Chetan Bhardwaj 👋</h3>
+        <p>
+          I'm a passionate BCA final year student and web developer. I created this AI-based multi-recommendation system using HTML, CSS, JavaScript, PHP, and XAMPP. My aim is to simplify digital decision-making using intelligent suggestions.
+        </p>
+
+        <div class="skills">
+          <h3>🚀 Technologies Used:</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>PHP & MySQL (XAMPP)</li>
+            <li>Responsive Web Design</li>
+            <li>AI Logic for Recommendation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔚 Footer -->
+<footer class="footer glow-footer">
+  <div class="footer-container">
+    <!-- 🧠 Brand Info -->
+    <div class="footer-left">
+      <h3>RecommendationHub</h3>
+      <p>AI-Powered Recommendations for Books, Movies, Music & Careers</p>
+    </div>
+    <!-- 🔗 Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+        <li><a href="services.html">🛠️ Services</a></li>
+        <li><a href="contact.html">📬 Contact</a></li>
+      </ul>
+    </div>
+    <!-- 📬 Contact + Social -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:chetanbhardwaj646@gmail.com">chetanbhardwaj646@gmail.com</a></p>
+      <p>Made with ❤️ by Chetan Bhardwaj</p>
+      <div class="social-icons">
+        <a href="https://discordapp.com/users/fatal_icarus" target="_blank" title="Discord">💬</a>
+        <a href="https://www.linkedin.com/in/chetan-bhardwaj-8095241b2" target="_blank" title="LinkedIn">💼</a>
+        <a href="https://www.instagram.com/chetxn_4" target="_blank" title="Instagram">📸</a>
+      </div>
+    </div>
+  </div>
+  <!-- 🔒 Bottom Line -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 RecommendationHub. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

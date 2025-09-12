@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - RecommendationHub</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00ffe7;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #00ffe7;
+    }
+
+    button {
+      background: #00ffe7;
+      color: #000;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00c7a6;
+      color: white;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.8);
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌐 Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">RecommendationHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 💌 Contact Form Section -->
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="contact.php" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+<!-- footer -->
+<footer class="footer glow-footer">
+  <div class="footer-container">
+    <!-- 🧠 Brand Info -->
+    <div class="footer-left">
+      <h3>RecommendationHub</h3>
+      <p>AI-Powered Recommendations for Books, Movies, Music & Careers</p>
+    </div>
+    <!-- 🔗 Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+        <li><a href="services.html">🛠️ Services</a></li>
+        <li><a href="contact.html">📬 Contact</a></li>
+      </ul>
+    </div>
+    <!-- 📬 Contact + Social -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:chetanbhardwaj646@gmail.com">chetanbhardwaj646@gmail.com</a></p>
+      <p>Made with ❤️ by Chetan Bhardwaj</p>
+      <div class="social-icons">
+        <a href="https://discordapp.com/users/fatal_icarus" target="_blank" title="Discord">💬</a>
+        <a href="https://www.linkedin.com/in/chetan-bhardwaj-8095241b2" target="_blank" title="LinkedIn">💼</a>
+        <a href="https://www.instagram.com/chetxn_4" target="_blank" title="Instagram">📸</a>
+      </div>
+    </div>
+  </div>
+  <!-- 🔒 Bottom Line -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 RecommendationHub. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
